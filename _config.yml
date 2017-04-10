@@ -3,19 +3,19 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
-subtitle:
-description:
-author: John Doe
-language:
-timezone:
+title: yinsang 
+subtitle: stay foolish, stay hungry.
+description: web developer
+author: yinsang
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
-url: http://yoursite.com
+url: http://yoursite.co://yinsang.github.io/
 root: /
 permalink: :year/:month/:day/:title/
-permalink_defaults:
+permalink_defaults: parmallink
 
 # Directory
 source_dir: source
@@ -46,7 +46,7 @@ highlight:
 # Category & Tag
 default_category: uncategorized
 category_map:
-tag_map:
+tag_map:  
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -65,10 +65,13 @@ pagination_dir: page
 ## Themes: https://hexo.io/themes/
 theme: next
 
-
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git
-  repo: https://github.com/yinsang/yinsang.github.io.git
+  repository: http://github.com/yinsang/yinsang.github.io.git
   branch: master
+server:
+   port: 4003
+   compress: true
+   header: true
