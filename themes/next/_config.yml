@@ -46,6 +46,7 @@ menu:
   #commonweal: /404.html
   zhihu: https://www.zhihu.com/people/wei-xue-wen-30/activities
   github: https://github.com/yinsang
+  resume: /resume
 # Enable/Disable menu icons.
 # Icon Mapping:
 #   Map a menu item to a specific FontAwesome icon name.
@@ -63,6 +64,7 @@ menu_icons:
   sitemap: sitemap
   commonweal: heartbeat
   github: github
+  resume: vcard-o
 
 
 
