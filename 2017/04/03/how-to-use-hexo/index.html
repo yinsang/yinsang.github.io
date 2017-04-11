@@ -87,17 +87,17 @@
 
 
 
-<meta name="description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令node -v输出： v4.2.6npm -v输出：3.5.2git -version输出：git version 2.7.4  安装hexo 学会看hexo官网文档，在win">
+<meta name="description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令">
 <meta name="keywords" content="hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="how to use hexo">
 <meta property="og:url" content="http://yoursite.co://yinsang.github.io/2017/04/03/how-to-use-hexo/index.html">
 <meta property="og:site_name" content="yinsang">
-<meta property="og:description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令node -v输出： v4.2.6npm -v输出：3.5.2git -version输出：git version 2.7.4  安装hexo 学会看hexo官网文档，在win">
-<meta property="og:updated_time" content="2017-04-07T08:07:19.915Z">
+<meta property="og:description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令">
+<meta property="og:updated_time" content="2017-04-11T09:07:15.093Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="how to use hexo">
-<meta name="twitter:description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令node -v输出： v4.2.6npm -v输出：3.5.2git -version输出：git version 2.7.4  安装hexo 学会看hexo官网文档，在win">
+<meta name="twitter:description" content="目的帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。  假设你已经正确安装了node（npm）， git，请用下面命令确定是否安装成功。请在cmd/shell/终端操作一下命令">
 
 
 
@@ -365,7 +365,7 @@
       
         <h1 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h1><p>帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。</p>
 <hr>
-<h1 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h1><p>你已经正确安装了node（npm）， git，<br><em>请用下面命令确定是否安装成功。</em><br>请在cmd/shell/终端操作一下命令<br><code>node -v</code><br>输出： <code>v4.2.6</code><br><code>npm -v</code><br>输出：<code>3.5.2</code><br><code>git -version</code><br>输出：<code>git version 2.7.4</code></p>
+<h1 id="假设"><a href="#假设" class="headerlink" title="假设"></a>假设</h1><p>你已经正确安装了node（npm）， git，<br><em>请用下面命令确定是否安装成功。</em><br>请在cmd/shell/终端操作一下命令<br><a id="more"></a><br><code>node -v</code><br>输出： <code>v4.2.6</code><br><code>npm -v</code><br>输出：<code>3.5.2</code><br><code>git -version</code><br>输出：<code>git version 2.7.4</code></p>
 <hr>
 <h1 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h1><ol>
 <li>学会看hexo官网文档，在windows下安装可能会有各种问题。请google解决之（我放弃<br>了windows，在linux下做hexo博客）。</li>
@@ -434,7 +434,9 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
 <hr>
 <h1 id="如何修改favicon"><a href="#如何修改favicon" class="headerlink" title="如何修改favicon"></a>如何修改favicon</h1><p>参见<a href="http://stackoverflow.com/questions/30291588/add-favicon-to-hexo-blog" target="_blank" rel="external">stackoverflow</a><br>for example, I use hexo-theme-next theme. I change code in themes/next/_config.yml.</p>
 <p><code># Put your favicon.ico into `hexo-site/source/` directory.</code><br><code>favicon: images/favicon.ico</code></p>
-<p>I put my favicon.ico in themes/next/source/images/favicon.ico<br>well Done.</p>
+<p>I put my favicon.ico in themes/next/source/images/favicon.ico</p>
+<h1 id="comments-system-about-hexo-in-China"><a href="#comments-system-about-hexo-in-China" class="headerlink" title="comments system about hexo in China"></a>comments system about hexo in China</h1><p>看了下<a href="http://theme-next.iissnan.com/third-party-services.html#comment-system" target="_blank" rel="external">官方文档</a>中的评论系统。duoshuo系统即将在2017/06/01关闭，准备用disqus，配置了网站domain site和config文件，但评论系统出不来，总是出<br><code>We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.</code>的提示。google了半天，发现应该是被墙了的原因。</p>
+<p>well Done.</p>
 
       
     </div>
@@ -605,7 +607,7 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目的"><span class="nav-number">1.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#假设"><span class="nav-number">2.</span> <span class="nav-text">假设</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装themes"><span class="nav-number">4.</span> <span class="nav-text">安装themes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置tags"><span class="nav-number">5.</span> <span class="nav-text">配置tags</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑这个index-md，添加type-quot-tags-quot-冒号后带空格-使之成为："><span class="nav-number">5.1.</span> <span class="nav-text">编辑这个index.md，添加type: "tags"(冒号后带空格),使之成为：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#type-“tags”"><span class="nav-number">5.2.</span> <span class="nav-text"> type: “tags”</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#两个pc都想更新hexo怎么办？"><span class="nav-number">6.</span> <span class="nav-text">两个pc都想更新hexo怎么办？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#看完上面的知乎转的教程。在做两个pc更新hexo的过程中，会遇到两个问题。"><span class="nav-number">7.</span> <span class="nav-text">看完上面的知乎转的教程。在做两个pc更新hexo的过程中，会遇到两个问题。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地hexo-init-的文件没有git，需要将远程分支和现分支关联。-表示在bash进行"><span class="nav-number">7.1.</span> <span class="nav-text">本地hexo init 的文件没有git，需要将远程分支和现分支关联。($ 表示在bash进行)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何修改favicon"><span class="nav-number">8.</span> <span class="nav-text">如何修改favicon</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#目的"><span class="nav-number">1.</span> <span class="nav-text">目的</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#假设"><span class="nav-number">2.</span> <span class="nav-text">假设</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装hexo"><span class="nav-number">3.</span> <span class="nav-text">安装hexo</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#安装themes"><span class="nav-number">4.</span> <span class="nav-text">安装themes</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置tags"><span class="nav-number">5.</span> <span class="nav-text">配置tags</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#编辑这个index-md，添加type-quot-tags-quot-冒号后带空格-使之成为："><span class="nav-number">5.1.</span> <span class="nav-text">编辑这个index.md，添加type: "tags"(冒号后带空格),使之成为：</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#type-“tags”"><span class="nav-number">5.2.</span> <span class="nav-text"> type: “tags”</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#两个pc都想更新hexo怎么办？"><span class="nav-number">6.</span> <span class="nav-text">两个pc都想更新hexo怎么办？</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#看完上面的知乎转的教程。在做两个pc更新hexo的过程中，会遇到两个问题。"><span class="nav-number">7.</span> <span class="nav-text">看完上面的知乎转的教程。在做两个pc更新hexo的过程中，会遇到两个问题。</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#本地hexo-init-的文件没有git，需要将远程分支和现分支关联。-表示在bash进行"><span class="nav-number">7.1.</span> <span class="nav-text">本地hexo init 的文件没有git，需要将远程分支和现分支关联。($ 表示在bash进行)</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#如何修改favicon"><span class="nav-number">8.</span> <span class="nav-text">如何修改favicon</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#comments-system-about-hexo-in-China"><span class="nav-number">9.</span> <span class="nav-text">comments system about hexo in China</span></a></li></ol></div>
             
 
           </div>
