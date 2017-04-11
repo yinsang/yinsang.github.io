@@ -9,10 +9,11 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
+
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
-
   {% include '_third-party/analytics/index.swig' %}
 
   {% set container_class = "container " %}
@@ -77,5 +78,23 @@
   {% include '_third-party/seo/baidu-push.swig' %}
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/exturl.swig' %}
+  <div id="container"></div>
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+          id: location.href, // 可选。默认为 location.href
+          owner: 'yinsang',
+          repo: 'yinsang.github.io',
+          oauth: {
+            client_id: 'f1741e29d5e2de45b5d5',
+            client_secret: '94a74d25d54bbff31fa9889f131c7c7c1e56ac4f',
+          },
+        })
+        gitment.render('container')
+    </script>
+  <script src="/js/src/user-title.js"></script>
+
+  <script src="/js/src/user-love.js"></script>
+  <script src="/js/src/user-nest.js"></script>
 </body>
 </html>

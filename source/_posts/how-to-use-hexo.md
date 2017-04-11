@@ -10,6 +10,7 @@ tags: [hexo]
 你已经正确安装了node（npm）， git， 
 *请用下面命令确定是否安装成功。*
 请在cmd/shell/终端操作一下命令
+<!-- more -->
 `node -v`
 输出： `v4.2.6`
 `npm -v`
@@ -130,6 +131,13 @@ for example, I use hexo-theme-next theme. I change code in themes/next/_config.y
 ``favicon: images/favicon.ico``
 
 I put my favicon.ico in themes/next/source/images/favicon.ico
+# comments system about hexo in China
+看了下[官方文档](http://theme-next.iissnan.com/third-party-services.html#comment-system)中的评论系统。duoshuo系统即将在2017/06/01关闭，facebook sdk用的人太少了，文档有限。网易云跟贴系统注册后无法看到站长信息（大概是本公司原因），故而准备用disqus，配置了网站domain site和config文件，但评论系统出不来，总是出
+``We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.``的提示。google了半天，发现应该是被墙了的原因。
+后来在[知乎](https://www.zhihu.com/question/57426274)找到了合理的替代版本。直接配置到``项目/themes/next/layout/_layout.swig中。link配置到head里，script配置到body上。具体可看我的
+[repositories](https://github.com/yinsang/yinsang.github.io/blob/hexo/themes/next/layout/_layout.swig)
+
+
 well Done.
 
 

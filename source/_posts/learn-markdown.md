@@ -1,6 +1,7 @@
 ---
 title: learn markdown
 date: 2017-04-06 14:47:19
+comment: true
 tags:
 ---
 # fuck

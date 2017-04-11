@@ -86,7 +86,7 @@ postcss和autoprefixer的css编译，比sass先进些，babel编译es6，rename�
 * Node.js搭建部分web服务，会处理路由，处理文件，抓包等一些简单的事
 * 了解BootStrap开发，熟悉jQuery开发，React开发，热爱组件式模块化开发思想
 * 爱分享，会部分linux命令，热爱Unix艺术
-* 爱折腾，sublime转vim编辑器尽情折腾,阅读源码，学习unix。
+* 爱折腾，sublime转vim编辑器尽情折腾,阅读源码，最近在学习unix。
 * 在关注页面效率和性能提升，注重代码质量
 * 爱看书，最近在看《javascript高级程序设计》、《程序员修炼之道：从小工到专家》、《UNIX编程艺术》，学到了很多东西。
 * * * 
