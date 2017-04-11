@@ -788,7 +788,7 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
     <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
     <script>
         var gitment = new Gitment({
-          id: '页面 ID', // 可选。默认为 location.href
+          id: location.href, // 可选。默认为 location.href
           owner: 'yinsang',
           repo: 'yinsang.github.io',
           oauth: {
