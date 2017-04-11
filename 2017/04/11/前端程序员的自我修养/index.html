@@ -670,7 +670,7 @@
   
 
     
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
+      <script id="dsq-count-scr" src="https://yinsang.disqus.com/count.js" async></script>
     
 
     
@@ -681,22 +681,9 @@
           this.page.title = '前端程序员的自我修养';
         };
         var d = document, s = d.createElement('script');
-        s.src = 'https://.disqus.com/embed.js';
+        s.src = 'https://yinsang.disqus.com/embed.js';
         s.setAttribute('data-timestamp', '' + +new Date());
         (d.head || d.body).appendChild(s);
-        var disqus = {
-          load : function disqus(){
-              if(typeof DISQUS !== 'object') {
-                (function () {
-                var s = document.createElement('script'); s.async = true;
-                s.type = 'text/javascript';
-                s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-                }());
-                $('#load-disqus').remove(); ///加载后移除按钮
-              }
-          }
-        }
       </script>
     
 
