@@ -130,6 +130,8 @@
 
 
   <title> 标签: hexo | yinsang </title>
+
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -524,14 +526,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://yinsang.disqus.com/count.js" async></script>
-    
-
-    
-
-  
-
 
 
 
@@ -574,7 +568,20 @@
 
   
 
-  
+  <div id="container"></div>
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+          id: '页面 ID', // 可选。默认为 location.href
+          owner: 'yinsang',
+          repo: 'yinsang.github.io',
+          oauth: {
+            client_id: 'f1741e29d5e2de45b5d5',
+            client_secret: '94a74d25d54bbff31fa9889f131c7c7c1e56ac4f',
+          },
+        })
+        gitment.render('container')
+    </script>
   <script src="/js/src/user-title.js"></script>
 
   <script src="/js/src/user-love.js"></script>

@@ -132,6 +132,8 @@
 
 
   <title> how to use hexo | yinsang </title>
+
+  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -339,17 +341,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/04/03/how-to-use-hexo/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2017/04/03/how-to-use-hexo/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -519,13 +510,6 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
 
           
   <div class="comments" id="comments">
-    
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
     
   </div>
 
@@ -758,26 +742,6 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
 
   
 
-    
-      <script id="dsq-count-scr" src="https://yinsang.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'http://yoursite.co://yinsang.github.io/2017/04/03/how-to-use-hexo/';
-          this.page.identifier = '2017/04/03/how-to-use-hexo/';
-          this.page.title = 'how to use hexo';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://yinsang.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -820,7 +784,20 @@ ERROR Deployer not found: git</code><br>请安装<code>npm install hexo-deployer
 
   
 
-  
+  <div id="container"></div>
+    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+          id: '页面 ID', // 可选。默认为 location.href
+          owner: 'yinsang',
+          repo: 'yinsang.github.io',
+          oauth: {
+            client_id: 'f1741e29d5e2de45b5d5',
+            client_secret: '94a74d25d54bbff31fa9889f131c7c7c1e56ac4f',
+          },
+        })
+        gitment.render('container')
+    </script>
   <script src="/js/src/user-title.js"></script>
 
   <script src="/js/src/user-love.js"></script>
