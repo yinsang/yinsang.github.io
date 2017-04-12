@@ -1,10 +1,10 @@
 ---
-title: how to use hexo
+title: use hexo and do more
 date: 2017-04-03 19:54:05
 tags: [hexo]
 ---
 # 目的
-帮助安装了hexo但不会配置themes和tag的人。后面有多个终端怎么同步更新hexo的教程。
+本文的初衷是帮助安装了hexo但不会配置themes和tag的人。后面总结了各类用hexo时的问题。
 - - -
 # 假设
 你已经正确安装了node（npm）， git， 
@@ -127,16 +127,40 @@ ERROR Deployer not found: git
 参见[stackoverflow](http://stackoverflow.com/questions/30291588/add-favicon-to-hexo-blog)
 for example, I use hexo-theme-next theme. I change code in themes/next/_config.yml.
 
-``# Put your favicon.ico into `hexo-site/source/` directory.``
-``favicon: images/favicon.ico``
+`# Put your favicon.ico into `hexo-site/source/` directory.`
+`favicon: images/favicon.ico`
 
 I put my favicon.ico in themes/next/source/images/favicon.ico
+* * * 
 # comments system about hexo in China
 看了下[官方文档](http://theme-next.iissnan.com/third-party-services.html#comment-system)中的评论系统。duoshuo系统即将在2017/06/01关闭，facebook sdk用的人太少了，文档有限。网易云跟贴系统注册后无法看到站长信息（大概是本公司原因），故而准备用disqus，配置了网站domain site和config文件，但评论系统出不来，总是出
-``We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.``的提示。google了半天，发现应该是被墙了的原因。
-后来在[知乎](https://www.zhihu.com/question/57426274)找到了合理的替代版本。直接配置到``项目/themes/next/layout/_layout.swig中。link配置到head里，script配置到body上。具体可看我的
+`We were unable to load Disqus. If you are a moderator please see our troubleshooting guide.`的提示。google了半天，发现应该是被墙了的原因。
+后来在[知乎](https://www.zhihu.com/question/57426274)找到了合理的替代版本。直接配置到`项目/themes/next/layout/_layout.swig`中。link配置到head里，script配置到`</body>`上方。具体可看我的
 [repositories](https://github.com/yinsang/yinsang.github.io/blob/hexo/themes/next/layout/_layout.swig)
+请大家尊重作者的观点，请勿滥用。
+# 单个博客怎么插入自定义img css js[教程](https://hexo.io/zh-cn/docs/asset-folders.html)
+* markdown引入-->
 
+`![](/tou.jpg)`无效；
+![](/tou.jpg)
+`![](tou.jpg)`有效；
+![](tou.jpg)
+* asset_img引入
+`asset_img tou.jpg This is an example image`
+两头加闭合标签 
+{% asset_img tou.jpg This is an example image %}
+* asset_link 引入链接，不常用。
+{% asset_link tou.jpg [tou.png] %} 
+{% asset_link test.css [test.css] %}
+{% asset_link console.js [console.js] %}
+* 为下面div添加自定义样式
+<div class="test-div"></div>
+<link rel="stylesheet" href="{% asset_path test.css %}">
+* 添加自定义js 在console里。
+<script src="{% asset_path console.js %}"></script>
+## ps: asset render 的问题
+asset文件夹里 里js和css会渲染到public里造成很多未命名的blog。看[issue](https://github.com/hexojs/hexo/issues/1490)
+在config里修改skip_render参数。
 
 well Done.
 

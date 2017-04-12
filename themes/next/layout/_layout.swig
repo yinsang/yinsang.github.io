@@ -10,7 +10,7 @@
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
 
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <link rel="stylesheet" href="/css/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}">
@@ -79,7 +79,7 @@
   {% include '_third-party/mathjax.swig' %}
   {% include '_third-party/exturl.swig' %}
   <div id="container"></div>
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script src="/js/src/gitment.browser.js"></script>
     <script>
         var gitment = new Gitment({
           id: location.href, // 可选。默认为 location.href
@@ -95,6 +95,15 @@
   <script src="/js/src/user-title.js"></script>
 
   <script src="/js/src/user-love.js"></script>
-  <script src="/js/src/user-nest.js"></script>
+  <script src="/js/src/user-rem-build.js"></script>
+  <script>
+      if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+        window.mobileUtil.fixScreen()
+      }else{
+          var userNest = document.createElement("script")
+          userNest.src = '/js/src/user-nest.js'
+          document.body.appendChild(userNest)
+      }
+  </script>
 </body>
 </html>
