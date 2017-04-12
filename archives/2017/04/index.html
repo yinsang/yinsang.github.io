@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans,en,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -131,7 +131,7 @@
 
   <title> 归档 | yinsang </title>
 
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <link rel="stylesheet" href="/css/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -288,7 +288,7 @@
       
         
       
-      嗯..! 目前共计 4 篇日志。 继续努力。
+      嗯..! 目前共计 7 篇日志。 继续努力。
     </span>
 
     
@@ -302,6 +302,117 @@
         <div class="collection-title">
           <h2 class="archive-year motion-element" id="archive-year-2017">2017</h2>
         </div>
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2017/04/12/2048/" itemprop="url">
+              
+                <span itemprop="name">未命名</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-12T14:24:53+08:00"
+              content="2017-04-12" >
+          04-12
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
+      
+      
+      
+
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2017/04/12/game-2048/" itemprop="url">
+              
+                <span itemprop="name">game-2048-</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-12T14:11:33+08:00"
+              content="2017-04-12" >
+          04-12
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
+      
+      
+      
+
+      
+      
+
+      
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+    <header class="post-header">
+
+      <h1 class="post-title">
+        
+            <a class="post-title-link" href="/2017/04/11/github-for-windows/" itemprop="url">
+              
+                <span itemprop="name">github for windows</span>
+              
+            </a>
+        
+      </h1>
+
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2017-04-11T17:32:45+08:00"
+              content="2017-04-11" >
+          04-11
+        </time>
+      </div>
+
+    </header>
+  </article>
+
+
+
+    
+
+      
+      
+      
+
       
       
 
@@ -425,7 +536,7 @@
         
             <a class="post-title-link" href="/2017/04/03/how-to-use-hexo/" itemprop="url">
               
-                <span itemprop="name">how to use hexo</span>
+                <span itemprop="name">use hexo and do more</span>
               
             </a>
         
@@ -492,7 +603,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -505,7 +616,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -706,7 +817,7 @@
   
 
   <div id="container"></div>
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script src="/js/src/gitment.browser.js"></script>
     <script>
         var gitment = new Gitment({
           id: location.href, // 可选。默认为 location.href
@@ -722,6 +833,15 @@
   <script src="/js/src/user-title.js"></script>
 
   <script src="/js/src/user-love.js"></script>
-  <script src="/js/src/user-nest.js"></script>
+  <script src="/js/src/user-rem-build.js"></script>
+  <script>
+      if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+        window.mobileUtil.fixScreen()
+      }else{
+          var userNest = document.createElement("script")
+          userNest.src = '/js/src/user-nest.js'
+          document.body.appendChild(userNest)
+      }
+  </script>
 </body>
 </html>

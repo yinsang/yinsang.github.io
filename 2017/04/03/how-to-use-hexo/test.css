@@ -1,0 +1,12 @@
+.test-div{width: 100px;height: 100px;background:green;position:relative;}
+.test-div:before{
+    content:"";
+    position: absolute;
+    top:0;left:0;
+    border:10px solid pink;
+    border-width:5px 20px 5px 20px;
+    border-top-left-radius:50%;
+    border-right-color:rgba(0,0,0,0);
+    border-bottom-color:rgba(0,0,0,0)
+    
+}

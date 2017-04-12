@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next pisces use-motion" lang="zh-Hans">
+<html class="theme-next pisces use-motion" lang="zh-Hans,en,default">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -94,7 +94,7 @@
 <meta property="og:url" content="http://yoursite.co://yinsang.github.io/2017/04/11/前端程序员的自我修养/index.html">
 <meta property="og:site_name" content="yinsang">
 <meta property="og:description" content="作为一个前端程序员，要有自己的梦想，做前端，又不仅仅是做前端。自己要成为海贼王，很多东西需要学。主流框架必须要看，git必须会用。后端、架构、mvc、mvvm、各种工具、性能优化，也都需要掌握。   敢于尝试。学习新东西，该装什么插件装什么插件，把官方api完整过一遍。对于前端来讲，nodejs，git都是可以随便搞的。只要电脑有备份，就不怕丢，怕的是不学习。 毅然决然的放弃百度。不要对百度心存幻">
-<meta property="og:updated_time" content="2017-04-11T02:40:18.207Z">
+<meta property="og:updated_time" content="2017-04-11T08:52:16.505Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="前端程序员的自我修养">
 <meta name="twitter:description" content="作为一个前端程序员，要有自己的梦想，做前端，又不仅仅是做前端。自己要成为海贼王，很多东西需要学。主流框架必须要看，git必须会用。后端、架构、mvc、mvvm、各种工具、性能优化，也都需要掌握。   敢于尝试。学习新东西，该装什么插件装什么插件，把官方api完整过一遍。对于前端来讲，nodejs，git都是可以随便搞的。只要电脑有备份，就不怕丢，怕的是不学习。 毅然决然的放弃百度。不要对百度心存幻">
@@ -133,7 +133,7 @@
 
   <title> 前端程序员的自我修养 | yinsang </title>
 
-  <link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
+  <link rel="stylesheet" href="/css/default.css">
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -410,6 +410,10 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2017/04/11/github-for-windows/" rel="next" title="github for windows">
+                <i class="fa fa-chevron-left"></i> github for windows
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
@@ -481,7 +485,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">4</span>
+                <span class="site-state-item-count">7</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -494,7 +498,7 @@
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>
@@ -693,7 +697,7 @@
   
 
   <div id="container"></div>
-    <script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
+    <script src="/js/src/gitment.browser.js"></script>
     <script>
         var gitment = new Gitment({
           id: location.href, // 可选。默认为 location.href
@@ -709,6 +713,15 @@
   <script src="/js/src/user-title.js"></script>
 
   <script src="/js/src/user-love.js"></script>
-  <script src="/js/src/user-nest.js"></script>
+  <script src="/js/src/user-rem-build.js"></script>
+  <script>
+      if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+        window.mobileUtil.fixScreen()
+      }else{
+          var userNest = document.createElement("script")
+          userNest.src = '/js/src/user-nest.js'
+          document.body.appendChild(userNest)
+      }
+  </script>
 </body>
 </html>

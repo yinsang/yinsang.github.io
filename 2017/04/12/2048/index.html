@@ -1,0 +1,982 @@
+<!doctype html>
+
+
+
+  
+
+
+<html class="theme-next pisces use-motion" lang="zh-Hans,en,default">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+  
+  
+  
+  
+
+  
+    
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+    
+    
+    <link href="//fonts.googleapis.com/css?family=Lato:300,300italic,400,400italic,700,700italic&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+  
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
+
+
+  <meta name="keywords" content="Hexo, NexT" />
+
+
+
+
+
+
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico?v=5.1.0" />
+
+
+
+
+
+
+<meta name="description" content="Function Declaration Example                    body{background:#eee;}         table{width:100%;}         tr{width:100%;}         /*td{width:20%;height:20%;line-height: 20%;text-align: center;f">
+<meta name="keywords">
+<meta property="og:type" content="article">
+<meta property="og:title" content="yinsang">
+<meta property="og:url" content="http://yoursite.co://yinsang.github.io/2017/04/12/2048/index.html">
+<meta property="og:site_name" content="yinsang">
+<meta property="og:description" content="Function Declaration Example                    body{background:#eee;}         table{width:100%;}         tr{width:100%;}         /*td{width:20%;height:20%;line-height: 20%;text-align: center;f">
+<meta property="og:updated_time" content="2017-04-11T10:27:59.046Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="yinsang">
+<meta name="twitter:description" content="Function Declaration Example                    body{background:#eee;}         table{width:100%;}         tr{width:100%;}         /*td{width:20%;height:20%;line-height: 20%;text-align: center;f">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    fancybox: true,
+    motion: true,
+    duoshuo: {
+      userId: '0',
+      author: '博主'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://yoursite.co://yinsang.github.io/2017/04/12/2048/"/>
+
+
+
+
+
+  <title>  | yinsang </title>
+
+  <link rel="stylesheet" href="/css/default.css">
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail ">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">yinsang</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">stay foolish, stay hungry.</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br />
+            
+            关于
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            归档
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            标签
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-zhihu">
+          <a href="https://www.zhihu.com/people/wei-xue-wen-30/activities" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-question-circle"></i> <br />
+            
+            知乎
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-github">
+          <a href="https://github.com/yinsang" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-github"></i> <br />
+            
+            github
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-resume">
+          <a href="/resume" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-vcard-o"></i> <br />
+            
+            简历
+          </a>
+        </li>
+      
+
+      
+    </ul>
+  
+
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.co://yinsang.github.io/2017/04/12/2048/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="yinsang">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/headImg.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="yinsang">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-04-12T14:24:53+08:00">
+                2017-04-12
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <!DOCTYPE html>
+<html>
+<head>
+    <title>Function Declaration Example</title>
+    <meta charset="UTF-8">
+
+    <style type="text/css">
+        body{background:#eee;}
+        table{width:100%;}
+        tr{width:100%;}
+        /*td{width:20%;height:20%;line-height: 20%;text-align: center;font-size:20px;background: #fff;}*/
+        td{width:20%;text-align: center;font-size:5em;background: #fff;}
+        td{border-radius: 0.5em;}
+        .activeTd{background:#fa8723;}
+        .spaceTd{background: pink}
+        .clearfix:before, .clearfix:after { content: ''; display: table; } .clearfix:after { clear: both; }
+        /*.letsGo{height:70%;}*/
+    </style>
+    <script src="https://cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+<div class="letsGo">
+    <table class="bigBox">
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</div>
+<script>
+    $(function(){
+        // $('tr').addClass("clearfix")
+        //给25个td赋予class和id
+        
+        //25个格子随机抽两个为初始位置
+        var AllArr = new Array(25)
+        var startPositionNum1 = Math.floor(Math.random()*AllArr.length)
+        var startPositionNum2 
+        var secondF=function(){
+            startPositionNum2 =  Math.floor(Math.random()*AllArr.length)
+        }
+        
+        secondF();
+        while(startPositionNum1==startPositionNum2){
+            secondF()
+        }
+        $('.bigBox tr td').html("&nbsp;")
+        $('.bigBox tr td').attr("class","usualTd")
+
+        $('.bigBox tr td').eq(startPositionNum1).html(2)
+        $('.bigBox tr td').eq(startPositionNum1).attr("class","activeTd")
+        $('.bigBox tr td').eq(startPositionNum2).html(2)
+        $('.bigBox tr td').eq(startPositionNum2).attr("class","activeTd")
+        //test
+        // $('.bigBox tr td').attr("class","usualTd")
+        
+        // $('.bigBox tr td').eq(5).html(2)
+        // $('.bigBox tr td').eq(5).attr("class","activeTd")
+        // // $('.bigBox tr td').eq(10).html(2)
+        // // $('.bigBox tr td').eq(10).attr("class","activeTd")
+        // $('.bigBox tr td').eq(15).html(2)
+        // $('.bigBox tr td').eq(15).attr("class","activeTd")
+        // $('.bigBox tr td').eq(20).html(8)
+        // $('.bigBox tr td').eq(20).attr("class","activeTd")
+        //样式设置
+        var tdWidth = $(".letsGo td").css("width");
+        $(".letsGo td").css("height",tdWidth)
+        //按键上下左右，触发画面
+        document.onkeydown=function(event){
+            $(".letsGo td").css("height",tdWidth)
+            var showingPostion = Math.floor(Math.random()*AllArr.length)
+            var e=event || window.event||arguments.callee.caller.arguments[0]
+            var compainPostion = undefined;
+            var usualTdArr = new Array($(".usualTd").length)
+            var usualTdArrNum = Math.floor(Math.random()*usualTdArr.length)
+            if(e&&e.keyCode ==37){
+                console.log("left")
+                compainPostion=0
+                //左右
+
+            }else if(e&&e.keyCode ==38){
+                console.log("up")
+                compainPostion=1
+
+            }else if(e&&e.keyCode ==39){
+                console.log("right")
+                compainPostion=2
+
+            }else if(e&&e.keyCode ==40){
+                console.log("down")
+                compainPostion=3
+
+            }
+            if(compainPostion!=undefined){
+
+                //left
+                if(compainPostion==0){
+                    for(var i=0;i < 5;i++){
+                        for(j=0;j < 5;){
+                            if(($(".bigBox").find("tr").eq(i).find("td").eq(j).html()!="&nbsp;")&&(j > 0)&&($(".bigBox").find("tr").eq(i).find("td").eq(j-1).html()=="&nbsp;")){
+                                var spaceTd = $(".bigBox").find("tr").eq(i).find("td").eq(j-1)
+                                spaceTd.remove()
+                                $(".bigBox").find("tr").eq(i).append("<td class='usualTd'>&nbsp;</td>")
+                                j=j-1
+                            }else{
+                                j++
+                            }
+                        }
+                    }
+                    for(var i=0;i < 5;i++){
+                        if($(".bigBox").find("tr").eq(i).find("td").eq(1).html()!="&nbsp;"){
+                            // console.log(i)
+                            for(var j=0;j < 5;j++){
+                                if($(".bigBox").find("tr").eq(i).find("td").eq(j).html()==$(".bigBox").find("tr").eq(i).find("td").eq(j+1).html()&&$(".bigBox").find("tr").eq(i).find("td").eq(j).html()!="&nbsp;"){
+                                    $(".bigBox").find("tr").eq(i).find("td").eq(j).html(2*$(".bigBox").find("tr").eq(i).find("td").eq(j).html())
+                                    $(".bigBox").find("tr").eq(i).find("td").eq(j+1).remove();
+                                    $(".bigBox").find("tr").eq(i).append("<td class='usualTd'>&nbsp;</td>")
+                                }
+                            }
+
+                        }
+                    }
+                }
+                //up
+                if(compainPostion==1){
+                    for(var i=0;i < 5;i++){//列
+                        for(j=0;j < 5;){//行
+                            if(($(".bigBox").find("tr").eq(j).find("td").eq(i).html()!="&nbsp;")&&(j > 0)&&($(".bigBox").find("tr").eq(j-1).find("td").eq(i).html()=="&nbsp;")){
+                                var changeTd = $(".bigBox").find("tr").eq(j).find("td").eq(i).html()
+                                $(".bigBox").find("tr").eq(j).find("td").eq(i).attr("class","usualTd")
+                                $(".bigBox").find("tr").eq(j).find("td").eq(i).html("&nbsp;");
+                                $(".bigBox").find("tr").eq(j-1).find("td").eq(i).html(changeTd).attr("class","activeTd")
+                                j=j-1
+                            }else{
+                                j++
+                            }
+                        }
+                    }
+                    for(var i=0;i < 5;i++){//列
+                        if($(".bigBox").find("tr").eq(1).find("td").eq(i).html()!="&nbsp;"){
+                            for(var j=0;j < 5;j++){//行
+                                if($(".bigBox").find("tr").eq(j).find("td").eq(i).html()==$(".bigBox").find("tr").eq(j+1).find("td").eq(i).html()&&$(".bigBox").find("tr").eq(j).find("td").eq(i).html()!="&nbsp;"){
+                                    $(".bigBox").find("tr").eq(j).find("td").eq(i).html(2*$(".bigBox").find("tr").eq(j).find("td").eq(i).html())
+                                    $(".bigBox").find("tr").eq(j+1).find("td").eq(i).attr("class","usualTd").html("&nbsp;");
+                                    for(var k = 0;k < 5-j;k++){
+                                        var tdClass = $(".bigBox").find("tr").eq(j-k).find("td").eq(i).attr("class");
+                                        var td = $(".bigBox").find("tr").eq(j-k).find("td").eq(i).html();
+                                        $(".bigBox").find("tr").eq(j-k).find("td").eq(i).attr("class",$(".bigBox").find("tr").eq(j-k-1).find("td").eq(i).attr("class")).html($(".bigBox").find("tr").eq(j-k-1).find("td").eq(i).html());
+                                        $(".bigBox").find("tr").eq(j-k-1).find("td").eq(i).attr("class",tdClass).html(td);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                //right
+                if(compainPostion==2){
+                    for(var i=0;i < 5;i++){
+                        for(j=0;j < 5;){
+                            if(($(".bigBox").find("tr").eq(i).find("td").eq(j).html()!="&nbsp;")&&(j < 5)&&($(".bigBox").find("tr").eq(i).find("td").eq(j+1).html()=="&nbsp;")){
+                                var spaceTd = $(".bigBox").find("tr").eq(i).find("td").eq(j+1)
+                                spaceTd.remove()
+                                $(".bigBox").find("tr").eq(i).prepend("<td class='usualTd'>&nbsp;</td>")
+                                j++
+                            }else{
+                                j++
+                            }
+                        }
+                    }
+                    for(var i=0;i < 5;i++){
+                        if($(".bigBox").find("tr").eq(i).find("td").eq(3).html()!="&nbsp;"){
+                            for(var j=0;j < 5;j++){
+                                if($(".bigBox").find("tr").eq(i).find("td").eq(4-j).html()==$(".bigBox").find("tr").eq(i).find("td").eq(3-j).html()&&$(".bigBox").find("tr").eq(i).find("td").eq(4-j).html()!="&nbsp;"){
+                                    $(".bigBox").find("tr").eq(i).find("td").eq(4-j).html(2*$(".bigBox").find("tr").eq(i).find("td").eq(4-j).html())
+                                    $(".bigBox").find("tr").eq(i).find("td").eq(3-j).remove();
+                                    $(".bigBox").find("tr").eq(i).prepend("<td class='usualTd'>&nbsp;</td>")
+                                    // j+=2;
+                                }
+                            }
+                        }
+                    }
+                }
+                //down
+                if(compainPostion==3){
+                    for(var i=0;i < 5;i++){//列
+                        for(j=0;j < 5;){//行
+                            if(($(".bigBox").find("tr").eq(j).find("td").eq(i).html()!="&nbsp;")&&(j < 5)&&($(".bigBox").find("tr").eq(j+1).find("td").eq(i).html()=="&nbsp;")){
+                                var changeTd = $(".bigBox").find("tr").eq(j).find("td").eq(i).html()
+                                $(".bigBox").find("tr").eq(j).find("td").eq(i).attr("class","usualTd")
+                                $(".bigBox").find("tr").eq(j).find("td").eq(i).html("&nbsp;");
+                                $(".bigBox").find("tr").eq(j+1).find("td").eq(i).html(changeTd).attr("class","activeTd")
+                            }else{
+                                j++
+                            }
+                        }
+                    }
+                    for(var i=0;i < 5;i++){//列
+                        if($(".bigBox").find("tr").eq(3).find("td").eq(i).html()!="&nbsp;"){
+                            for(var j=0;j < 5;j++){//行
+                                if($(".bigBox").find("tr").eq(4-j).find("td").eq(i).html()==$(".bigBox").find("tr").eq(4-j-1).find("td").eq(i).html()){
+                                    $(".bigBox").find("tr").eq(4-j).find("td").eq(i).html(2*$(".bigBox").find("tr").eq(4-j).find("td").eq(i).html())
+                                    $(".bigBox").find("tr").eq(4-j-1).find("td").eq(i).attr("class","usualTd").html("&nbsp;");
+                                    for(var k = 0;k < 4-j;k++){
+                                        if(2-j-k > -1){
+                                            var tdClass = $(".bigBox").find("tr").eq(3-j-k).find("td").eq(i).attr("class");
+                                            var td = $(".bigBox").find("tr").eq(3-j-k).find("td").eq(i).html();
+                                            $(".bigBox").find("tr").eq(3-j-k).find("td").eq(i).attr("class",$(".bigBox").find("tr").eq(2-j-k).find("td").eq(i).attr("class")).html($(".bigBox").find("tr").eq(2-j-k).find("td").eq(i).html());
+                                            $(".bigBox").find("tr").eq(2-j-k).find("td").eq(i).attr("class",tdClass).html(td);
+
+                                        }
+                                        
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                }
+                // for(var i=0;i < $('.bigBox tr .usualTd').length;i++){
+                //     var TD=$('.bigBox tr .usualTd').eq(i)
+                //     TD.attr("id",i)
+                // }
+                // console.log(usualTdArrNum)
+                setTimeout(function(){
+                    $('.bigBox .usualTd').eq(usualTdArrNum).html(2)
+                    $('.bigBox .usualTd').eq(usualTdArrNum).attr("class","activeTd")
+                    $('.bigBox .usualTd').eq(usualTdArrNum).fadeIn()
+                },300)
+                $(".usualTd").html("&nbsp;")
+            }
+
+        }
+        
+        // $(".letsGo td").css("line-height",tdWidth)
+
+    })
+</script>
+</body>
+</html>
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+        
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/04/12/game-2048/" rel="prev" title="game-2048-">
+                game-2048- <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+  <div class="comments" id="comments">
+    
+  </div>
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview sidebar-panel sidebar-panel-active">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          <img class="site-author-image" itemprop="image"
+               src="/images/headImg.jpg"
+               alt="yinsang" />
+          <p class="site-author-name" itemprop="name">yinsang</p>
+           
+              <p class="site-description motion-element" itemprop="description">web developer</p>
+          
+        </div>
+        <nav class="site-state motion-element">
+
+          
+            <div class="site-state-item site-state-posts">
+              <a href="/archives">
+                <span class="site-state-item-count">7</span>
+                <span class="site-state-item-name">日志</span>
+              </a>
+            </div>
+          
+
+          
+
+          
+            
+            
+            <div class="site-state-item site-state-tags">
+              <a href="/tags/index.html">
+                <span class="site-state-item-count">2</span>
+                <span class="site-state-item-name">标签</span>
+              </a>
+            </div>
+          
+
+        </nav>
+
+        
+
+        <div class="links-of-author motion-element">
+          
+        </div>
+
+        
+        
+
+        
+        
+
+        
+
+
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright" >
+  
+  &copy; 
+  <span itemprop="copyrightYear">2017</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">yinsang</span>
+</div>
+
+
+<div class="powered-by">
+  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
+</div>
+
+<div class="theme-info">
+  主题 -
+  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
+    NexT.Pisces
+  </a>
+</div>
+
+
+        
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+  <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+
+  
+  <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+
+  
+  <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.0"></script>
+
+
+
+  
+  
+
+
+  <script type="text/javascript" src="/js/src/affix.js?v=5.1.0"></script>
+
+  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.0"></script>
+
+
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.0"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+
+  <div id="container"></div>
+    <script src="/js/src/gitment.browser.js"></script>
+    <script>
+        var gitment = new Gitment({
+          id: location.href, // 可选。默认为 location.href
+          owner: 'yinsang',
+          repo: 'yinsang.github.io',
+          oauth: {
+            client_id: 'f1741e29d5e2de45b5d5',
+            client_secret: '94a74d25d54bbff31fa9889f131c7c7c1e56ac4f',
+          },
+        })
+        gitment.render('container')
+    </script>
+  <script src="/js/src/user-title.js"></script>
+
+  <script src="/js/src/user-love.js"></script>
+  <script src="/js/src/user-rem-build.js"></script>
+  <script>
+      if(navigator.userAgent.match(/(iPhone|iPod|Android|ios|iPad)/i)){
+        window.mobileUtil.fixScreen()
+      }else{
+          var userNest = document.createElement("script")
+          userNest.src = '/js/src/user-nest.js'
+          document.body.appendChild(userNest)
+      }
+  </script>
+</body>
+</html>
