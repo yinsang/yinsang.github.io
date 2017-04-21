@@ -1284,8 +1284,9 @@ var canvas23 = function(){
     ctx.beginPath()
     ctx.arc(70,90,10, 0, Math.PI * 2, false)
     ctx.fill()
+    ctx.fillText('需要用chrome，开启chrome://flags/里面的canvas feature才能用addHitRegion属性', 100, 100)
 try {
-    ctx.addHitRegion( {"id": "limeRectangle" } );
+    ctx.addHitRegion( {"id": "circle" } );
 } catch( e ) {
     alert( "your browser does not support hit regions" );
 }
