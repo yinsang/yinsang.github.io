@@ -1290,6 +1290,11 @@ try {
 } catch( e ) {
     alert( "your browser does not support hit regions" );
 }
+ctx.beginPath()
+    ctx.arc(170,90,10, 0, Math.PI * 2, false)
+    ctx.fill()
+    ctx.addHitRegion({"id": "circle2"})
+    ctx.removeHitRegion("circle2")
     this.canvas.addEventListener("click", function(e){
         console.log(e)
         if(e.region){
