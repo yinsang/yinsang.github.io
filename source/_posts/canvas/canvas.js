@@ -48,9 +48,11 @@ createCanvas.prototype = {
     render:function() {
         this.container.appendChild(this.canvas)
     },
-    addId:function(name){
+    addId:function(canvasName){
 
-        this.canvas.id = name;
+        console.log(canvasName)
+        this.canvas.id = canvasName;
+        this.canvas.setAttribute("id", canvasName)
     },
 
 }
@@ -59,6 +61,7 @@ var Render = function(drawFoo){
     var canvas = new createCanvas()
     canvas.draw = drawFoo
     canvas.draw()
+    console.log(arguments.callee.name)
     canvas.addId(drawFoo.name)
     canvas.render();
 }
@@ -1228,18 +1231,7 @@ var canvas22 = function(){
     img.setAttribute('crossOrigin', '');
     let Canvas = this.canvas
     img.onload = function(){
-        //ctx.drawImage(img, 0, 0)
-    var radialGradient = ctx.createRadialGradient (Canvas.width/2, Canvas.height/2, 10, Canvas.width/2, Canvas.height/2, 200);
-
-    radialGradient.addColorStop(0, 'rgba(247, 247, 247, .1)');
-    radialGradient.addColorStop(0.7, 'rgba(120, 120, 120, .5)');
-    radialGradient.addColorStop(0.9, 'rgba(0, 0, 0, .8)');
-    radialGradient.addColorStop(1, 'rgba(238, 238, 238, 1)');
-    ctx.beginPath();
-    ctx.arc(Canvas.width/2, Canvas.height/2, 300, 0, Math.PI * 2, true);
-    ctx.closePath();
-    ctx.fillStyle = radialGradient;
-    ctx.fill();
+    ctx.drawImage(img, 0, 0)
 
 
     let myImageData = ctx.getImageData(0, 0,100,100)
@@ -1247,6 +1239,8 @@ var canvas22 = function(){
     console.log(myImageData)
     let anotherImg = ctx.createImageData(myImageData)
     console.log(anotherImg)
+    ctx.putImageData(myImageData, 500,100)
+    //反相用255减去。灰度用平均值
     //确定是只传了大小，并没有颜色样式
         let pick = function(e){
             console.log(e)
@@ -1264,6 +1258,11 @@ var canvas22 = function(){
 
         Canvas.addEventListener("mousemove", pick)
 
+        var url = Canvas.toDataURL('image/png')
+        let url2 = Canvas.toDataURL('image/jpeg', .5)
+        let blob = Canvas.toBlob(function(blobs){console.log(blobs)},'image/jpeg',.95)
+        //console.log(url,blob)
+        //url 是base 64 图片；
     }
 
 }
@@ -1273,6 +1272,39 @@ let colorBlock = document.createElement("input")
 colorBlock.className = "colorPicker"
 colorBlock.style.cssText = "border:1px solid black;width:150px;height:50px;margin:10px;font-size:13px;"
     document.querySelector(".post-body").appendChild(colorBlock)
+var canvas23 = function(){
+    var ctx = this.canvas.getContext("2d")
+    ctx.beginPath();
+    ctx.moveTo(0,100)
+    ctx.lineTo(620, 100)
+    ctx.strokeStyle = "pink"
+    ctx.stroke()
+
+    ctx.strokeStyle="#000";
+    ctx.beginPath()
+    ctx.arc(70,90,10, 0, Math.PI * 2, false)
+    ctx.fill()
+    ctx.fillText('需要用chrome，开启chrome://flags/里面的canvas feature才能用addHitRegion属性', 100, 100)
+try {
+    ctx.addHitRegion( {"id": "circle" } );
+} catch( e ) {
+    alert( "your browser does not support hit regions" );
+}
+ctx.beginPath()
+    ctx.arc(170,90,10, 0, Math.PI * 2, false)
+    ctx.fill()
+    ctx.addHitRegion({"id": "circle2"})
+    ctx.removeHitRegion("circle2")
+    this.canvas.addEventListener("click", function(e){
+        console.log(e)
+        if(e.region){
+            console.log('hit region:' + e.region)
+
+        }
+    })
+}
+Render(canvas23)
+
 var canvas100 = function(){
     var ctx = this.canvas.getContext("2d")
     ctx.beginPath();
@@ -1284,3 +1316,4 @@ var canvas100 = function(){
     ctx.strokeStyle="#000";
 }
 Render(canvas100)
+

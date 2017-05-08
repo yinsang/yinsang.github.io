@@ -162,6 +162,10 @@ I put my favicon.ico in themes/next/source/images/favicon.ico
 asset文件夹里 里js和css会渲染到public里造成很多未命名的blog。看[issue](https://github.com/hexojs/hexo/issues/1490)
 在config里修改skip_render参数。
 
+##关于博客自定义页面的问题
+比如我有一个css3的总结，想放在blog里，想自定义页面。
+后来折腾了很久，用了网上说的  `layout : false`和 修改target的方法，均不满意。
+最终我明白了，那些复杂点的东西还是自己单独搞总结吧。不适合做blog里。blog就是记录和阐述的，只需要链接图片就够了。
 well Done.
 
 
