@@ -3,8 +3,8 @@
 ## Seller Information
 - **Name:** Wei Yinpeng (魏银鹏)
 - **Email:** yinpeng.wyp@alibaba-inc.com
-- **Phone:** +86 1xx-xxxx-xxxx (Please replace with your real phone number)
-- **Address:** Room 83, Xiaoji Village, Daji Village, Liupen Town, Runan County, Zhumadian City, Henan Province, China
+- **Phone:** +86 17737781102 (Please replace with your real phone number)
+- **Address:** beiJing, China
 
 ## Product Description
 
