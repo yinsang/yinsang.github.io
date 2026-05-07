@@ -2,7 +2,7 @@
 
 ## Seller Information
 - **Name:** Wei Yinpeng (魏银鹏)
-- **Email:** yinpeng.wyp@alibaba-inc.com
+- **Email:** love1175180338@gmail.com
 - **Phone:** +86 17737781102 (Please replace with your real phone number)
 - **Address:** beiJing, China
 
